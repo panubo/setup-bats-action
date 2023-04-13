@@ -1,0 +1,29 @@
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - uses: madhead/semver-utils@v3
+        id: version
+        with:
+          version: ${{ github.ref_name }}
+          lenient: false
+
+      - run: |
+          git config user.name github-actions
+          git config user.email github-actions@panubo.com
+
+      - run: |
+          git tag -f v${{ steps.version.outputs.major }} ${{ github.event.inputs.target }}
+
+      - run: |
+          git push origin v${{ steps.version.outputs.major }} --force
