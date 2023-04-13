@@ -41,5 +41,8 @@ jobs:
       - name: Setup BATS
         uses: ./
 
+      - name: BATS version
+        run: bats --version
+
       - name: BATS test
         run: bats __tests__/integration.bats
