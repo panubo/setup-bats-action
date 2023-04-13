@@ -18,9 +18,9 @@ jobs:
     steps:
 
       - name: Setup BATS
-        uses: mig4/setup-bats@v1
+        uses: panubo/setup-bats-action@v2
         with:
-          bats-version: 1.2.1
+          bats-version: 1.7.0
 
       - name: Check out code
         uses: actions/checkout@v1
@@ -33,7 +33,7 @@ jobs:
 
 Options available as keys in `with` block
 
-- `bats-version` (`string`): version of [BATS][] to setup, defaults to 1.2.1 if
+- `bats-version` (`string`): version of [BATS][] to setup, defaults to 1.7.0 if
   not set
 
 ## Platforms 🖥
@@ -133,8 +133,8 @@ See the [versioning documentation](https://github.com/actions/toolkit/blob/maste
 [![license-badge][]](LICENSE)
 
 
-[tag-badge]: https://img.shields.io/github/v/tag/mig4/setup-bats
-[ci-badge]: https://github.com/mig4/setup-bats/workflows/CI/badge.svg
-[ci-target]: https://github.com/mig4/setup-bats/actions?workflow=CI
+[tag-badge]: https://img.shields.io/github/v/tag/panubo/setup-bats-action
+[ci-badge]: https://github.com/panubo/setup-bats-action/workflows/CI/badge.svg
+[ci-target]: https://github.com/panubo/setup-bats-action/actions?workflow=CI
 [bats]: https://github.com/bats-core/bats-core
-[license-badge]: https://img.shields.io/github/license/mig4/setup-bats?style=for-the-badge
+[license-badge]: https://img.shields.io/github/license/panubo/setup-bats-action?style=for-the-badge

@@ -1,10 +1,10 @@
 name: 'Setup BATS testing framework'
 description: 'Setup BATS framework and add it to PATH'
-author: 'mig4'
+author: 'panubo'
 inputs:
   bats-version:
     description: 'The BATS version to setup. Example: 1.0.0 or master, default: 1.2.1'
-    default: '1.2.1'
+    default: '1.7.0'
 runs:
-  using: 'node12'
+  using: 'node16'
   main: 'dist/index.js'
