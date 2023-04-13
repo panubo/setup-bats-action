@@ -42,7 +42,7 @@ So far this action has only been tested on Linux [environments](https://help.git
 
 ## Contributing 🤝
 
-See known [issues](https://github.com/mig4/setup-bats/issues), if you found
+See known [issues](https://github.com/panubo/setup-bats-action/issues), if you found
 one that's not on the list or have a suggestion for improvement, open a new
 issue. If you can, fork and send a PR, it will be appreciated 💖.
 
@@ -117,7 +117,7 @@ For the tag to be published to marketplace you need to create a release from
 it which you can do by going into _Releases_ in GitHub UI, then _Tags_ and
 clicking the menu next to the newly created tag and select _Create release_.
 Alternatively use the URL (replace `x.y` as appropriate):
-https://github.com/mig4/setup-bats/releases/new?tag=v1.x.y
+https://github.com/panubo/setup-bats-action/releases/new?tag=v1.x.y
 
 The action is now published! :rocket: 
 
