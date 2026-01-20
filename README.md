@@ -1,3 +1,5 @@
+# DEPRECATED - use [bats-core/bats-action](https://github.com/bats-core/bats-action) instead
+
 [![tag-badge][]]() [![CI][ci-badge]][ci-target]
 
 # Setup BATS 🦇
